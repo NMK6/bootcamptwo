@@ -1,0 +1,22 @@
+{
+	"name": "bootcamptwo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass -w sass/main.scss -o css/ --recursive"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NMK6/bootcamptwo.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/NMK6/bootcamptwo/issues"
+	},
+	"homepage": "https://github.com/NMK6/bootcamptwo#readme",
+	"devDependencies": {
+		"node-sass": "^7.0.0"
+	}
+}
