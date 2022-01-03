@@ -1,0 +1,8 @@
+.location {
+	background-color: $grey;
+	height: 50px;
+	@include add-flex;
+	&__icon {
+		padding-right: 1rem;
+	}
+}

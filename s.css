@@ -1,0 +1,9 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.root {
+	background: url('Homepage.png');
+	height: 2263px;
+	background-repeat: no-repeat;
+}

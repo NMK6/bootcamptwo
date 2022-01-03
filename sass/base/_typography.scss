@@ -4,12 +4,43 @@ body {
 }
 a {
 	color: black;
-
 }
-.logo__title {
+h1,
+h2,
+h3,
+h4 {
+	color: $heading;
+}
+.header__title {
 	font-family: 'Shrikhand', cursive;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
+	font-weight: 900;
 }
-.location__title {
+.location {
+	color: $grey-title;
+	&__icon {
+		font-size: 1rem;
+	}
+	&__title {
+		font-size: 1rem;
+		font-weight: 500;
+	}
+}
+
+.book__p {
+	color: $dark-grey;
+	font-weight: 300;
 	font-size: 1.2rem;
+	text-align: center;
+}
+.book__link {
+	color: white;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+.footer {
+	color: white;
+	&__title {
+		font-family: 'Shrikhand', cursive;
+	}
 }
