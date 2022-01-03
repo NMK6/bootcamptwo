@@ -1,4 +1,12 @@
 .footer {
 	background-color: $heading;
-	padding: 30px 20px;
+	padding: 10px 20px;
+	&__info {
+		opacity: 0.9;
+	}
+}
+.fa-utensils,
+.fa-hands-helping {
+	padding-right: 5px;
+	opacity: 0.9;
 }

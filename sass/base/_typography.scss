@@ -38,9 +38,15 @@ h4 {
 	font-weight: 500;
 	font-size: 0.9rem;
 }
-.footer {
+.footer a {
 	color: white;
-	&__title {
-		font-family: 'Shrikhand', cursive;
-	}
+	font-size: 1rem;
+}
+p.footer__title a {
+	font-family: 'Shrikhand', cursive;
+	font-size: 1.1rem;
+}
+.fa-utensils,
+.fa-hands-helping {
+	font-size: 0.8rem;
 }
