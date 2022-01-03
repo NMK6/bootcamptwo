@@ -25,7 +25,9 @@
 	}
 	&__info-container {
 		width: 100%;
-		padding-left: 20px;
+		padding: 0 20px;
+		@include add-flex;
+		justify-content: space-between;
 	}
 	&__title {
 		margin: 0.4rem 0;
