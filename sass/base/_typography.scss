@@ -5,6 +5,7 @@ body {
 a {
 	color: black;
 }
+
 h1,
 h2,
 h3,
@@ -15,6 +16,7 @@ h4 {
 	font-family: 'Shrikhand', cursive;
 	font-size: 1.8rem;
 	font-weight: 900;
+	letter-spacing: 0.5px;
 }
 .location {
 	color: $grey-title;
@@ -30,7 +32,7 @@ h4 {
 .book__p {
 	color: $dark-grey;
 	font-weight: 300;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	text-align: center;
 }
 .book__link {
@@ -38,6 +40,21 @@ h4 {
 	font-weight: 500;
 	font-size: 0.9rem;
 }
+.point {
+	font-size: 0.9rem;
+	&__number {
+		color: white;
+		font-size: 0.9rem;
+	}
+	&__icon {
+		font-size: 1.2rem;
+		color: $dark-grey;
+		&--clicked {
+			color: $primary;
+		}
+	}
+}
+
 .footer a {
 	color: white;
 	font-size: 1rem;

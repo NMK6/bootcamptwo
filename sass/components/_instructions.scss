@@ -1,0 +1,27 @@
+.instructions {
+	padding: 20px;
+}
+.point {
+	height: 70px;
+	background-color: $light-grey;
+	position: relative;
+	border-radius: 20px;
+	@include shadow;
+	@include add-flex;
+	margin: 25px 10px;
+	padding-left: 35px;
+	margin-right: 0;
+	justify-content: start;
+	&__number {
+		position: absolute;
+		left: -10px;
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		background-color: $primary;
+		@include add-flex;
+	}
+	&__icon {
+		padding-right: 1rem;
+	}
+}
