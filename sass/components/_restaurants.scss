@@ -2,3 +2,29 @@
 	background-color: $light-grey;
 	padding: 20px;
 }
+.restaurant {
+	border-radius: 20px;
+	@include add-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	align-items: start;
+	background-color: white;
+	margin-bottom: 20px;
+	@include shadow;
+	&__image-container {
+		width: 100%;
+	}
+
+	&__image {
+		height: 175px;
+		width: 100%;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+		object-fit: cover;
+	}
+	&__info-container {
+		width: 100%;
+		padding-left: 20px;
+	}
+}
