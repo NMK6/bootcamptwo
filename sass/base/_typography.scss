@@ -48,7 +48,7 @@ h4 {
 	}
 	&__icon {
 		font-size: 1.2rem;
-		color: $dark-grey;
+		color: rgba($dark-grey, 0.8);
 		&--clicked {
 			color: $primary;
 		}
@@ -56,6 +56,7 @@ h4 {
 }
 
 .footer a {
+
 	color: white;
 	font-size: 1rem;
 }

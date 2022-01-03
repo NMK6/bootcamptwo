@@ -1,8 +1,12 @@
 .footer {
 	background-color: $heading;
 	padding: 10px 20px;
+	&__info-container {
+		margin: 0.6rem 0;
+	}
 	&__info {
 		opacity: 0.9;
+		margin: 0.6rem 0;
 	}
 }
 .fa-utensils,

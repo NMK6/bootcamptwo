@@ -53,7 +53,7 @@ h4 {
     font-size: 0.9rem; }
   .point__icon {
     font-size: 1.2rem;
-    color: #6c6c6c; }
+    color: rgba(108, 108, 108, 0.8); }
     .point__icon--clicked {
       color: #9356dc; }
 
@@ -120,8 +120,11 @@ p.footer__title a {
 .footer {
   background-color: #353535;
   padding: 10px 20px; }
+  .footer__info-container {
+    margin: 0.6rem 0; }
   .footer__info {
-    opacity: 0.9; }
+    opacity: 0.9;
+    margin: 0.6rem 0; }
 
 .fa-utensils,
 .fa-hands-helping {
@@ -129,7 +132,8 @@ p.footer__title a {
   opacity: 0.9; }
 
 .instructions {
-  padding: 20px; }
+  padding: 20px;
+  height: 440px; }
 
 .point {
   height: 70px;
@@ -156,3 +160,7 @@ p.footer__title a {
     align-items: center; }
   .point__icon {
     padding-right: 1rem; }
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 20px; }
