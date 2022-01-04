@@ -63,7 +63,6 @@ h4 {
 }
 .restaurant__icon-container {
 	font-size: 1.4rem;
-	color: rgba($dark-grey, 0.8);
 }
 .footer a {
 	color: white;
@@ -76,4 +75,13 @@ p.footer__title a {
 .fa-utensils,
 .fa-hands-helping {
 	font-size: 0.8rem;
+}
+.restaurant__icon-container .fas.fa-heart {
+	color: white;
+}
+.restaurant__icon-container .far.fa-heart {
+	color: rgba($dark-grey, 0.8);
+}
+.restaurant__icon-container .fas.fa-heart:hover {
+	color: $primary;
 }

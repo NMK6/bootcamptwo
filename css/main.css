@@ -65,8 +65,7 @@ h4 {
   font-size: 1.1rem; }
 
 .restaurant__icon-container {
-  font-size: 1.4rem;
-  color: rgba(108, 108, 108, 0.8); }
+  font-size: 1.4rem; }
 
 .footer a {
   color: white;
@@ -79,6 +78,15 @@ p.footer__title a {
 .fa-utensils,
 .fa-hands-helping {
   font-size: 0.8rem; }
+
+.restaurant__icon-container .fas.fa-heart {
+  color: white; }
+
+.restaurant__icon-container .far.fa-heart {
+  color: rgba(108, 108, 108, 0.8); }
+
+.restaurant__icon-container .fas.fa-heart:hover {
+  color: #9356dc; }
 
 .main {
   display: flex;
@@ -207,3 +215,12 @@ p.footer__title a {
     margin: 0.4rem 0; }
   .restaurant__p {
     margin: 0.4rem 0 0.9rem; }
+
+#heart, #heart-1 {
+  cursor: pointer;
+  stroke: rgba(108, 108, 108, 0.8);
+  transition: 1s all ease; }
+
+#heart:hover, #heart-1:hover {
+  fill: #9356dc;
+  stroke: #9356dc; }

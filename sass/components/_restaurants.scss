@@ -36,3 +36,12 @@
 		margin: 0.4rem 0 0.9rem;
 	}
 }
+#heart, #heart-1 {
+	cursor: pointer;
+	stroke: rgba($dark-grey, 0.8);
+	transition: 1s all ease;
+}
+#heart:hover, #heart-1:hover {
+	fill: $primary;
+	stroke: $primary;
+}
