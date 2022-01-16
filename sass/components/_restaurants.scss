@@ -35,13 +35,24 @@
 	&__p {
 		margin: 0.4rem 0 0.9rem;
 	}
-}
-#heart, #heart-1 {
-	cursor: pointer;
-	stroke: rgba($dark-grey, 0.8);
-	transition: 1s all ease;
-}
-#heart:hover, #heart-1:hover {
-	fill: $primary;
-	stroke: $primary;
+	&__icon-container {
+		position: relative;
+	}
+	&__icon-container .fa-heart {
+		position: absolute;
+		top: -1rem;
+		left: -1rem;
+	}
+	&__icon-container .fas {
+		opacity: 0;
+	}
+	&__icon-container .far {
+		opacity: 1;
+	}
+	.restaurant__icon-container .far:hover {
+		opacity: 0;
+	}
+	.restaurant__icon-container .fas:hover {
+		opacity: 1;
+	}
 }

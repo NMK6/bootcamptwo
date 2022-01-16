@@ -8,6 +8,18 @@ body {
 a {
   text-decoration: none; }
 
+@keyframes add-opacity {
+  0% {
+    opaciyty: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes remove-opacity {
+  0% {
+    opaciyty: 1; }
+  100% {
+    opacity: 0; } }
+
 body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif; }
@@ -46,6 +58,9 @@ h4 {
   font-weight: 500;
   font-size: 0.9rem; }
 
+.book__title {
+  text-align: center; }
+
 .point {
   font-size: 0.9rem; }
   .point__number {
@@ -80,40 +95,51 @@ p.footer__title a {
   font-size: 0.8rem; }
 
 .restaurant__icon-container .fas.fa-heart {
-  color: white; }
+  color: #9356dc; }
 
-.restaurant__icon-container .far.fa-heart {
+.restaurant__icon-container .far {
   color: rgba(108, 108, 108, 0.8); }
 
-.restaurant__icon-container .fas.fa-heart:hover {
+.restaurant__icon-container .fas {
   color: #9356dc; }
+
+.root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center; }
 
 .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px; }
 
 .header {
-  height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px;
   z-index: 2; }
+  .header__title {
+    margin: 1rem 0; }
 
 .location {
   background-color: #eaeaea;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center; }
   .location__icon {
     padding-right: 1rem; }
+  .location__title-container {
+    margin: 0.7rem 0; }
 
 .book {
-  height: 290px;
-  padding: 40px 20px;
+  padding: 40px 20px 90px;
   background-color: #f6f6f6;
   display: flex;
   justify-content: center;
@@ -215,12 +241,17 @@ p.footer__title a {
     margin: 0.4rem 0; }
   .restaurant__p {
     margin: 0.4rem 0 0.9rem; }
-
-#heart, #heart-1 {
-  cursor: pointer;
-  stroke: rgba(108, 108, 108, 0.8);
-  transition: 1s all ease; }
-
-#heart:hover, #heart-1:hover {
-  fill: #9356dc;
-  stroke: #9356dc; }
+  .restaurant__icon-container {
+    position: relative; }
+  .restaurant__icon-container .fa-heart {
+    position: absolute;
+    top: -1rem;
+    left: -1rem; }
+  .restaurant__icon-container .fas {
+    opacity: 0; }
+  .restaurant__icon-container .far {
+    opacity: 1; }
+  .restaurant .restaurant__icon-container .far:hover {
+    opacity: 0; }
+  .restaurant .restaurant__icon-container .fas:hover {
+    opacity: 1; }

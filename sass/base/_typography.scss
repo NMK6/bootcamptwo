@@ -40,6 +40,9 @@ h4 {
 	font-weight: 500;
 	font-size: 0.9rem;
 }
+.book__title {
+	text-align: center;
+}
 .point {
 	font-size: 0.9rem;
 	&__number {
@@ -77,11 +80,11 @@ p.footer__title a {
 	font-size: 0.8rem;
 }
 .restaurant__icon-container .fas.fa-heart {
-	color: white;
+	color: $primary;
 }
-.restaurant__icon-container .far.fa-heart {
+.restaurant__icon-container .far {
 	color: rgba($dark-grey, 0.8);
 }
-.restaurant__icon-container .fas.fa-heart:hover {
+.restaurant__icon-container .fas {
 	color: $primary;
 }

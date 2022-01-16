@@ -1,6 +1,8 @@
 .header {
-	height: 65px;
 	@include add-flex;
 	@include shadow;
 	z-index: 2;
+	&__title {
+		margin: 1rem 0;
+	}
 }

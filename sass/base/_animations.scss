@@ -1,0 +1,16 @@
+@keyframes add-opacity {
+	0% {
+		opaciyty: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes remove-opacity {
+	0% {
+		opaciyty: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
