@@ -1,6 +1,5 @@
 .instructions {
-	padding: 20px;
-	height: 440px;
+	padding: 20px 20px 62px;
 }
 .point {
 	height: 70px;
@@ -11,6 +10,7 @@
 	@include add-flex;
 	margin: 25px 10px;
 	padding-left: 35px;
+	padding-right: 35px;
 	margin-right: 0;
 	justify-content: start;
 	&__number {

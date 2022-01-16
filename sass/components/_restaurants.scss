@@ -1,6 +1,6 @@
 .restaurants {
 	background-color: $light-grey;
-	padding: 20px;
+	padding: 20px 20px 40px;
 }
 .restaurant {
 	border-radius: 20px;
@@ -14,6 +14,21 @@
 	@include shadow;
 	&__image-container {
 		width: 100%;
+		&--new {
+			position: relative;
+			&::before {
+				position: absolute;
+				top: 1rem;
+				right: 0.8rem;
+				background-color: $tertiary;
+				content: 'New';
+				width: 4.8rem;
+				height: 1.8rem;
+				color: #139273;
+				font-size: 0.9rem;
+				@include add-flex;
+			}
+		}
 	}
 
 	&__image {
@@ -42,6 +57,7 @@
 		position: absolute;
 		top: -1rem;
 		left: -1rem;
+		cursor: pointer;
 	}
 	&__icon-container .fas {
 		opacity: 0;

@@ -126,7 +126,7 @@ p.footer__title a {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px;
   z-index: 2; }
   .header__title {
-    margin: 1rem 0; }
+    margin: 0.7rem 0; }
 
 .location {
   background-color: #eaeaea;
@@ -139,7 +139,7 @@ p.footer__title a {
     margin: 0.7rem 0; }
 
 .book {
-  padding: 40px 20px 90px;
+  padding: 40px 20px 84px;
   background-color: #f6f6f6;
   display: flex;
   justify-content: center;
@@ -177,8 +177,7 @@ p.footer__title a {
   opacity: 0.9; }
 
 .instructions {
-  padding: 20px;
-  height: 440px; }
+  padding: 20px 20px 62px; }
 
 .point {
   height: 70px;
@@ -191,6 +190,7 @@ p.footer__title a {
   align-items: center;
   margin: 25px 10px;
   padding-left: 35px;
+  padding-right: 35px;
   margin-right: 0;
   justify-content: start; }
   .point__number {
@@ -208,7 +208,7 @@ p.footer__title a {
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 20px; }
+  padding: 20px 20px 40px; }
 
 .restaurant {
   border-radius: 20px;
@@ -224,6 +224,21 @@ p.footer__title a {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px; }
   .restaurant__image-container {
     width: 100%; }
+    .restaurant__image-container--new {
+      position: relative; }
+      .restaurant__image-container--new::before {
+        position: absolute;
+        top: 1rem;
+        right: 0.8rem;
+        background-color: #99e2d0;
+        content: 'New';
+        width: 4.8rem;
+        height: 1.8rem;
+        color: #139273;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
   .restaurant__image {
     height: 175px;
     width: 100%;
@@ -246,7 +261,8 @@ p.footer__title a {
   .restaurant__icon-container .fa-heart {
     position: absolute;
     top: -1rem;
-    left: -1rem; }
+    left: -1rem;
+    cursor: pointer; }
   .restaurant__icon-container .fas {
     opacity: 0; }
   .restaurant__icon-container .far {
