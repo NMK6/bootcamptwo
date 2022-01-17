@@ -28,21 +28,23 @@ h4 {
 		font-weight: 500;
 	}
 }
+.book {
+	&__p {
+		color: $dark-grey;
+		font-weight: 300;
+		font-size: 1.1rem;
+		text-align: center;
+	}
+	&__link {
+		color: white;
+		font-weight: 500;
+		font-size: 0.9rem;
+	}
+	&__title {
+		text-align: center;
+	}
+}
 
-.book__p {
-	color: $dark-grey;
-	font-weight: 300;
-	font-size: 1.1rem;
-	text-align: center;
-}
-.book__link {
-	color: white;
-	font-weight: 500;
-	font-size: 0.9rem;
-}
-.book__title {
-	text-align: center;
-}
 .point {
 	font-size: 0.9rem;
 	&__number {
@@ -57,15 +59,42 @@ h4 {
 		}
 	}
 }
-.restaurant__title {
-	font-size: 1.2rem;
+.restaurant {
+	&__title {
+		font-size: 1.2rem;
+	}
+	&__p {
+		color: $dark-grey;
+		font-size: 1.1rem;
+	}
+	&__icon-container {
+		font-size: 1.4rem;
+	}
+	&__icon-container .fas.fa-heart {
+		color: $primary;
+	}
+	&__icon-container .far {
+		color: rgba($dark-grey, 0.8);
+	}
+	&__icon-container .fas {
+		color: $primary;
+	}
+	&__image-container--new::before {
+		color: #139273;
+		font-size: 0.9rem;
+	}
 }
-.restaurant__p {
-	color: $dark-grey;
-	font-size: 1.1rem;
+.menu__title {
+	text-transform: capitalize;
+	font-family: 'Shrikhand', cursive;
+	font-size: 1.7rem;
+	font-weight: 900;
+	letter-spacing: 0.5px;
 }
-.restaurant__icon-container {
-	font-size: 1.4rem;
+.course {
+	&__title {
+		text-transform: uppercase;
+	}
 }
 .footer a {
 	color: white;
@@ -79,12 +108,7 @@ p.footer__title a {
 .fa-hands-helping {
 	font-size: 0.8rem;
 }
-.restaurant__icon-container .fas.fa-heart {
-	color: $primary;
-}
-.restaurant__icon-container .far {
-	color: rgba($dark-grey, 0.8);
-}
-.restaurant__icon-container .fas {
-	color: $primary;
+
+.fa-arrow-left {
+	font-size: 1.4rem;
 }

@@ -82,6 +82,29 @@ h4 {
 .restaurant__icon-container {
   font-size: 1.4rem; }
 
+.restaurant__icon-container .fas.fa-heart {
+  color: #9356dc; }
+
+.restaurant__icon-container .far {
+  color: rgba(108, 108, 108, 0.8); }
+
+.restaurant__icon-container .fas {
+  color: #9356dc; }
+
+.restaurant__image-container--new::before {
+  color: #139273;
+  font-size: 0.9rem; }
+
+.menu__title {
+  text-transform: capitalize;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.7rem;
+  font-weight: 900;
+  letter-spacing: 0.5px; }
+
+.course__title {
+  text-transform: uppercase; }
+
 .footer a {
   color: white;
   font-size: 1rem; }
@@ -94,14 +117,8 @@ p.footer__title a {
 .fa-hands-helping {
   font-size: 0.8rem; }
 
-.restaurant__icon-container .fas.fa-heart {
-  color: #9356dc; }
-
-.restaurant__icon-container .far {
-  color: rgba(108, 108, 108, 0.8); }
-
-.restaurant__icon-container .fas {
-  color: #9356dc; }
+.fa-arrow-left {
+  font-size: 1.4rem; }
 
 .root {
   width: 100%;
@@ -124,7 +141,11 @@ p.footer__title a {
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px;
-  z-index: 2; }
+  z-index: 2;
+  position: relative; }
+  .header__arrow {
+    position: absolute;
+    left: 1.5rem; }
   .header__title {
     margin: 0.7rem 0; }
 
@@ -234,8 +255,6 @@ p.footer__title a {
         content: 'New';
         width: 4.8rem;
         height: 1.8rem;
-        color: #139273;
-        font-size: 0.9rem;
         display: flex;
         justify-content: center;
         align-items: center; }
@@ -245,6 +264,10 @@ p.footer__title a {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     object-fit: cover; }
+    .restaurant__image--radius {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      height: 100%; }
   .restaurant__info-container {
     width: 100%;
     padding: 0 20px;
@@ -271,3 +294,24 @@ p.footer__title a {
     opacity: 0; }
   .restaurant .restaurant__icon-container .fas:hover {
     opacity: 1; }
+
+.image {
+  width: 100%;
+  height: 265px; }
+
+.menu {
+  padding: 0 2rem;
+  background-color: #f6f6f6;
+  position: relative; }
+  .menu::before {
+    width: 100%;
+    position: absolute;
+    content: '';
+    top: -2.5rem;
+    height: 2.5rem;
+    left: 0;
+    background-color: #f6f6f6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px; }
+  .menu__title {
+    margin-top: 0; }

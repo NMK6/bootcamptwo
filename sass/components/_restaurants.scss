@@ -24,8 +24,6 @@
 				content: 'New';
 				width: 4.8rem;
 				height: 1.8rem;
-				color: #139273;
-				font-size: 0.9rem;
 				@include add-flex;
 			}
 		}
@@ -37,6 +35,11 @@
 		border-top-right-radius: 20px;
 		border-top-left-radius: 20px;
 		object-fit: cover;
+		&--radius {
+			border-top-right-radius: 0;
+			border-top-left-radius: 0;
+			height: 100%;
+		}
 	}
 	&__info-container {
 		width: 100%;

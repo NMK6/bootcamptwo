@@ -1,0 +1,19 @@
+.menu {
+	padding: 0 2rem;
+	background-color: $light-grey;
+	position: relative;
+	&::before {
+		width: 100%;
+		position: absolute;
+		content: '';
+		top: -2.5rem;
+		height: 2.5rem;
+		left: 0;
+		background-color: $light-grey;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+	}
+	&__title {
+		margin-top: 0;
+	}
+}

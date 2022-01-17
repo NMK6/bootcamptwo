@@ -2,6 +2,11 @@
 	@include add-flex;
 	@include shadow;
 	z-index: 2;
+	position: relative;
+	&__arrow {
+		position: absolute;
+		left: 1.5rem;
+	}
 	&__title {
 		margin: 0.7rem 0;
 	}
