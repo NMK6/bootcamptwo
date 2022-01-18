@@ -1,0 +1,25 @@
+.heart {
+	&__icon-container {
+		position: relative;
+	}
+	&__icon-container .fa-heart {
+		position: absolute;
+		top: -1rem;
+		left: -1rem;
+		cursor: pointer;
+	}
+	&__icon-container &__colour {
+		opacity: 0;
+		transition: all 1s ease-in-out;
+	}
+	&__icon-container &__empty {
+		opacity: 1;
+		transition: all 1s ease-in-out;
+	}
+	&__icon-container:hover &__empty {
+		opacity: 0;
+	}
+	&__icon-container:hover &__colour {
+		opacity: 1;
+	}
+}

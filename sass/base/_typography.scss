@@ -67,21 +67,24 @@ h4 {
 		color: $dark-grey;
 		font-size: 1.1rem;
 	}
-	&__icon-container {
-		font-size: 1.4rem;
-	}
-	&__icon-container .fas.fa-heart {
-		color: $primary;
-	}
-	&__icon-container .far {
-		color: rgba($dark-grey, 0.8);
-	}
-	&__icon-container .fas {
-		color: $primary;
-	}
+
 	&__image-container--new::before {
 		color: #139273;
 		font-size: 0.9rem;
+	}
+}
+.heart {
+	&__icon-container {
+		font-size: 1.4rem;
+	}
+	&__icon-container &__colour {
+		color: $primary;
+	}
+	&__icon-container &__empty {
+		color: rgba($dark-grey, 0.8);
+	}
+	&__icon-container &__colour {
+		color: $primary;
 	}
 }
 .menu__title {

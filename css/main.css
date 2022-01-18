@@ -79,21 +79,21 @@ h4 {
   color: #6c6c6c;
   font-size: 1.1rem; }
 
-.restaurant__icon-container {
-  font-size: 1.4rem; }
-
-.restaurant__icon-container .fas.fa-heart {
-  color: #9356dc; }
-
-.restaurant__icon-container .far {
-  color: rgba(108, 108, 108, 0.8); }
-
-.restaurant__icon-container .fas {
-  color: #9356dc; }
-
 .restaurant__image-container--new::before {
   color: #139273;
   font-size: 0.9rem; }
+
+.heart__icon-container {
+  font-size: 1.4rem; }
+
+.heart__icon-container .heart__colour {
+  color: #9356dc; }
+
+.heart__icon-container .heart__empty {
+  color: rgba(108, 108, 108, 0.8); }
+
+.heart__icon-container .heart__colour {
+  color: #9356dc; }
 
 .menu__title {
   text-transform: capitalize;
@@ -279,21 +279,29 @@ p.footer__title a {
     margin: 0.4rem 0; }
   .restaurant__p {
     margin: 0.4rem 0 0.9rem; }
-  .restaurant__icon-container {
-    position: relative; }
-  .restaurant__icon-container .fa-heart {
-    position: absolute;
-    top: -1rem;
-    left: -1rem;
-    cursor: pointer; }
-  .restaurant__icon-container .fas {
-    opacity: 0; }
-  .restaurant__icon-container .far {
-    opacity: 1; }
-  .restaurant .restaurant__icon-container .far:hover {
-    opacity: 0; }
-  .restaurant .restaurant__icon-container .fas:hover {
-    opacity: 1; }
+
+.heart__icon-container {
+  position: relative; }
+
+.heart__icon-container .fa-heart {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  cursor: pointer; }
+
+.heart__icon-container .heart__colour {
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+
+.heart__icon-container .heart__empty {
+  opacity: 1;
+  transition: all 1s ease-in-out; }
+
+.heart__icon-container:hover .heart__empty {
+  opacity: 0; }
+
+.heart__icon-container:hover .heart__colour {
+  opacity: 1; }
 
 .image {
   width: 100%;
@@ -313,5 +321,12 @@ p.footer__title a {
     background-color: #f6f6f6;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px; }
+  .menu__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between; }
+    .menu__header > restaurant__icon-container {
+      padding-right: 1rem; }
   .menu__title {
     margin-top: 0; }

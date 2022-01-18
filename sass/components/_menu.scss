@@ -13,6 +13,13 @@
 		border-top-left-radius: 40px;
 		border-top-right-radius: 40px;
 	}
+	&__header {
+		@include add-flex;
+		justify-content: space-between;
+		& > restaurant__icon-container {
+			padding-right: 1rem;
+		}
+	}
 	&__title {
 		margin-top: 0;
 	}
