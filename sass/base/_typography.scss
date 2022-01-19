@@ -80,7 +80,8 @@ h4 {
 	&__icon-container &__colour {
 		color: $primary;
 	}
-	&__icon-container &__empty {
+	&__icon-container &__empty,
+	&__empty--grey {
 		color: rgba($dark-grey, 0.8);
 	}
 	&__icon-container &__colour {

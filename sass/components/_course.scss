@@ -1,0 +1,21 @@
+.course {
+	width: 100%;
+	&__title {
+		margin-left: 10px;
+	}
+	&__text {
+		@include add-flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		align-items: flex-start;
+	}
+	&__name {
+		margin: 0;
+	}
+	&__info {
+		margin: 0;
+	}
+	&__pick {
+		opacity: 0;
+	}
+}

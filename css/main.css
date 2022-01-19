@@ -89,7 +89,7 @@ h4 {
 .heart__icon-container .heart__colour {
   color: #9356dc; }
 
-.heart__icon-container .heart__empty {
+.heart__icon-container .heart__empty, .heart__empty--grey {
   color: rgba(108, 108, 108, 0.8); }
 
 .heart__icon-container .heart__colour {
@@ -145,7 +145,8 @@ p.footer__title a {
   position: relative; }
   .header__arrow {
     position: absolute;
-    left: 1.5rem; }
+    left: 1rem;
+    padding: 1rem; }
   .header__title {
     margin: 0.7rem 0; }
 
@@ -199,33 +200,6 @@ p.footer__title a {
 
 .instructions {
   padding: 20px 20px 62px; }
-
-.point {
-  height: 70px;
-  background-color: #f6f6f6;
-  position: relative;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 25px 10px;
-  padding-left: 35px;
-  padding-right: 35px;
-  margin-right: 0;
-  justify-content: start; }
-  .point__number {
-    position: absolute;
-    left: -10px;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color: #9356dc;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .point__icon {
-    padding-right: 1rem; }
 
 .restaurants {
   background-color: #f6f6f6;
@@ -308,7 +282,7 @@ p.footer__title a {
   height: 265px; }
 
 .menu {
-  padding: 0 2rem;
+  padding: 0 1rem;
   background-color: #f6f6f6;
   position: relative; }
   .menu::before {
@@ -330,3 +304,55 @@ p.footer__title a {
       padding-right: 1rem; }
   .menu__title {
     margin-top: 0; }
+
+.point {
+  height: 70px;
+  background-color: #f6f6f6;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-right: 0;
+  justify-content: start; }
+  .point__number {
+    position: absolute;
+    left: -10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #9356dc;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .point__icon {
+    padding-right: 1rem; }
+  .point--course {
+    background-color: white;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%; }
+
+.course {
+  width: 100%; }
+  .course__title {
+    margin-left: 10px; }
+  .course__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start; }
+  .course__name {
+    margin: 0; }
+  .course__info {
+    margin: 0; }
+  .course__pick {
+    opacity: 0; }
