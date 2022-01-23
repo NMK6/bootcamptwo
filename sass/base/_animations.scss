@@ -24,3 +24,21 @@
 		transform: translateY(0);
 	}
 }
+@keyframes move-right {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-5rem);
+	}
+}
+@keyframes move-around {
+	0% {
+		opaciyty: 0;
+		transform: rotate(0);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(180deg);
+	}
+}

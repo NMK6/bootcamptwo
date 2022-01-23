@@ -31,12 +31,34 @@
 		align-items: flex-end;
 		padding-right: 1rem;
 		height: 100%;
+		transition: all 1s ease;
 	}
 	&__pick {
+		@include add-flex;
+		position: absolute;
+		width: 5rem;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-color: $tertiary;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
 		opacity: 0;
-		display: none;
+		transition: all 1s ease;
+	}
+	&__icon {
+		transition: all 0.5s ease;
 	}
 	&__order-container {
 		@include add-flex;
+	}
+	&__button:hover > &__price {
+		transform: translateX(-5rem);
+	}
+	&__button:hover > &__pick {
+		opacity: 1;
+	}
+	&__button:hover > &__pick > &__icon {
+		transform: rotate(360deg);
 	}
 }
