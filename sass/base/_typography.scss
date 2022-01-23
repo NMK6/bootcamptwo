@@ -98,6 +98,20 @@ h4 {
 .course {
 	&__title {
 		text-transform: uppercase;
+		font-weight: 300;
+	}
+	&__info {
+		color: $dark-grey;
+	}
+	&__name {
+		text-transform: capitalize;
+		font-size: 1.1rem;
+		color: $grey-title;
+	}
+	&__price {
+		font-weight: 700;
+		font-size: 1rem;
+		color: $grey-title;
 	}
 }
 .footer a {
