@@ -12,7 +12,8 @@ h3,
 h4 {
 	color: $heading;
 }
-.header__title {
+.header__title,
+h1 {
 	font-family: 'Shrikhand', cursive;
 	font-size: 1.8rem;
 	font-weight: 900;
@@ -35,11 +36,7 @@ h4 {
 		font-size: 1.1rem;
 		text-align: center;
 	}
-	&__link {
-		color: white;
-		font-weight: 500;
-		font-size: 0.9rem;
-	}
+
 	&__title {
 		text-align: center;
 	}
@@ -98,7 +95,8 @@ h4 {
 .course {
 	&__title {
 		text-transform: uppercase;
-		font-weight: 300;
+		font-weight: 400;
+		font-size: 1rem;
 	}
 	&__info {
 		color: $dark-grey;
@@ -112,6 +110,13 @@ h4 {
 		font-weight: 700;
 		font-size: 1rem;
 		color: $grey-title;
+	}
+}
+.order-button {
+	&__link {
+		color: white;
+		font-weight: 500;
+		font-size: 0.9rem;
 	}
 }
 .footer a {

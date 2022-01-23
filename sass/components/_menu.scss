@@ -2,6 +2,7 @@
 	padding: 0 1rem;
 	background-color: $light-grey;
 	position: relative;
+	padding-bottom: 5rem;
 	&::before {
 		width: 100%;
 		position: absolute;
@@ -24,5 +25,8 @@
 		margin-top: 0;
 		margin-left: 0.6rem;
 		margin-bottom: 0.9rem;
+	}
+	&__course {
+		padding-bottom: 1.5rem;
 	}
 }

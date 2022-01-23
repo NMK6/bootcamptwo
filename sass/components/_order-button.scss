@@ -1,0 +1,14 @@
+.order-button {
+	margin-top: 1rem;
+	height: 50px;
+	background-image: linear-gradient($secondary, $primary);
+	@include add-flex;
+	border-radius: 30px;
+	@include shadow;
+	&--short {
+		width: 40%;
+	}
+	&__link {
+		padding: 1.5rem;
+	}
+}

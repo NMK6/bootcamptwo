@@ -10,15 +10,4 @@
 	&__p {
 		margin-bottom: 0.6rem;
 	}
-	&__link-container {
-		margin-top: 1rem;
-		height: 50px;
-		background-image: linear-gradient($secondary, $primary);
-		@include add-flex;
-		border-radius: 30px;
-		@include shadow;
-	}
-	&__link {
-		padding: 1.5rem;
-	}
 }
