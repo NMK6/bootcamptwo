@@ -3,6 +3,7 @@
 	@include shadow;
 	z-index: 2;
 	position: relative;
+	background-color: white;
 	&__arrow {
 		position: absolute;
 		left: 1rem;

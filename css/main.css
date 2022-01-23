@@ -8,6 +8,9 @@ body {
 a {
   text-decoration: none; }
 
+.root {
+  background-color: #6c6c6c; }
+
 @keyframes add-opacity {
   0% {
     opaciyty: 0; }
@@ -27,20 +30,6 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
-@keyframes move-right {
-  0% {
-    transform: translateX(0); }
-  100% {
-    transform: translateX(-5rem); } }
-
-@keyframes move-around {
-  0% {
-    opaciyty: 0;
-    transform: rotate(0); }
-  100% {
-    opacity: 1;
-    transform: rotate(180deg); } }
 
 body {
   font-size: 16px;
@@ -129,7 +118,6 @@ h1 {
   color: #6c6c6c; }
 
 .course__name {
-  text-transform: capitalize;
   font-size: 1.1rem;
   color: #424242; }
 
@@ -184,7 +172,8 @@ p.footer__title a {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px;
   z-index: 2;
-  position: relative; }
+  position: relative;
+  background-color: white; }
   .header__arrow {
     position: absolute;
     left: 1rem;
@@ -230,7 +219,8 @@ p.footer__title a {
   opacity: 0.9; }
 
 .instructions {
-  padding: 20px 20px 62px; }
+  padding: 20px 20px 62px;
+  background-color: white; }
 
 .restaurants {
   background-color: #f6f6f6;
@@ -385,6 +375,8 @@ p.footer__title a {
     animation-delay: 0.2s; }
   .point--two {
     animation-delay: 0.4s; }
+  .point--three {
+    animation-delay: 0.6s; }
 
 .course {
   width: 100%; }
