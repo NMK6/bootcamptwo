@@ -29,5 +29,17 @@
 		padding-right: 10px;
 		padding-left: 10px;
 		width: 100%;
+		opacity: 0;
+		animation-name: button-appearance;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-delay: 0;
+	}
+	&--one {
+		animation-delay: 0.4s;
+	}
+	&--two {
+		animation-delay: 0.8s;
 	}
 }

@@ -20,6 +20,14 @@ a {
   100% {
     opacity: 0; } }
 
+@keyframes button-appearance {
+  0% {
+    opaciyty: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif; }
@@ -318,7 +326,8 @@ p.footer__title a {
       padding-right: 1rem; }
   .menu__title {
     margin-top: 0;
-    margin-left: 0.6rem; }
+    margin-left: 0.6rem;
+    margin-bottom: 0.9rem; }
 
 .point {
   height: 70px;
@@ -352,7 +361,17 @@ p.footer__title a {
     margin: 25px 0;
     padding-right: 10px;
     padding-left: 10px;
-    width: 100%; }
+    width: 100%;
+    opacity: 0;
+    animation-name: button-appearance;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0; }
+  .point--one {
+    animation-delay: 0.4s; }
+  .point--two {
+    animation-delay: 0.8s; }
 
 .course {
   width: 100%; }
