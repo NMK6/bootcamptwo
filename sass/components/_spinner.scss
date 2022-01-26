@@ -1,0 +1,22 @@
+.spinner {
+	@include add-flex;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	min-height: 100vh;
+	background-color: $primary;
+	animation-name: remove-opacity;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	&__loader {
+		width: 6rem;
+		height: 6rem;
+		border: 16px solid transparent;
+		border-radius: 50%;
+		border-top: 16px solid $secondary;
+		border-bottom: 16px solid $tertiary;
+		animation: spin 1s linear infinite;
+	}
+}

@@ -1,4 +1,10 @@
 .instructions {
 	padding: 20px 20px 62px;
 	background-color: white;
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.instructions {
+		width: 50%;
+	}
 }

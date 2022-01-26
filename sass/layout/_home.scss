@@ -12,4 +12,37 @@
 	width: 100%;
 	max-width: 600px;
 	@include shadow;
+
+	&--animation {
+		opacity: 0;
+		animation-name: add-opacity;
+		animation-duration: 3s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-delay: 1.5s;
+	}
+	&__screen-section {
+		@include add-flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.main {
+		max-width: 700px;
+		&__screen-section {
+			flex-direction: row;
+			padding: 0 1rem;
+			background-color: white;
+		}
+	}
+}
+@media screen and (min-width: 900px) {
+	.main {
+		max-width: 80%;
+		&__screen-section {
+			padding: 0 2rem;
+		}
+	}
 }

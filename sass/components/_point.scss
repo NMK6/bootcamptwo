@@ -10,6 +10,12 @@
 	padding-right: 35px;
 	margin-right: 0;
 	justify-content: start;
+	transition: all 1s ease;
+	&:hover {
+		background-color: lighten($light-grey, 3%);
+		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	}
+
 	&__number {
 		position: absolute;
 		left: -10px;
@@ -37,6 +43,7 @@
 		animation-fill-mode: forwards;
 		animation-delay: 0;
 	}
+
 	&--one {
 		animation-delay: 0.2s;
 	}

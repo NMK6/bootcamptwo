@@ -5,6 +5,14 @@
 	@include add-flex;
 	border-radius: 30px;
 	@include shadow;
+	transition: all 1s ease;
+	&:hover {
+		background-image: linear-gradient(
+			rgba($secondary, 0.95),
+			rgba($primary, 0.95)
+		);
+		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	}
 	&--short {
 		width: 40%;
 	}

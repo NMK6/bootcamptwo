@@ -9,7 +9,8 @@ a {
   text-decoration: none; }
 
 .root {
-  background-color: #6c6c6c; }
+  background-color: #6c6c6c;
+  position: relative; }
 
 @keyframes add-opacity {
   0% {
@@ -17,11 +18,19 @@ a {
   100% {
     opacity: 1; } }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 @keyframes remove-opacity {
   0% {
-    opaciyty: 1; }
+    opaciyty: 1;
+    z-index: 3; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    z-index: 0; } }
 
 @keyframes button-appearance {
   0% {
@@ -165,6 +174,33 @@ p.footer__title a {
   width: 100%;
   max-width: 600px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px; }
+  .main--animation {
+    opacity: 0;
+    animation-name: add-opacity;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s; }
+  .main__screen-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .main {
+    max-width: 700px; }
+    .main__screen-section {
+      flex-direction: row;
+      padding: 0 1rem;
+      background-color: white; } }
+
+@media screen and (min-width: 900px) {
+  .main {
+    max-width: 80%; }
+    .main__screen-section {
+      padding: 0 2rem; } }
 
 .header {
   display: flex;
@@ -194,6 +230,7 @@ p.footer__title a {
 .book {
   padding: 40px 20px 84px;
   background-color: #f6f6f6;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,6 +240,13 @@ p.footer__title a {
     margin-top: 0; }
   .book__p {
     margin-bottom: 0.6rem; }
+
+@media screen and (min-width: 768px) {
+  .book {
+    width: 50%;
+    padding: 70px 20px 84px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px; } }
 
 .footer {
   background-color: #353535;
@@ -220,7 +264,12 @@ p.footer__title a {
 
 .instructions {
   padding: 20px 20px 62px;
-  background-color: white; }
+  background-color: white;
+  width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .instructions {
+    width: 50%; } }
 
 .restaurants {
   background-color: #f6f6f6;
@@ -344,7 +393,11 @@ p.footer__title a {
   padding-left: 35px;
   padding-right: 35px;
   margin-right: 0;
-  justify-content: start; }
+  justify-content: start;
+  transition: all 1s ease; }
+  .point:hover {
+    background-color: #fefefe;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
   .point__number {
     position: absolute;
     left: -10px;
@@ -446,8 +499,35 @@ p.footer__title a {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px; }
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px;
+  transition: all 1s ease; }
+  .order-button:hover {
+    background-image: linear-gradient(rgba(255, 121, 218, 0.95), rgba(147, 86, 220, 0.95));
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
   .order-button--short {
     width: 40%; }
   .order-button__link {
     padding: 1.5rem; }
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #9356dc;
+  animation-name: remove-opacity;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+  .spinner__loader {
+    width: 6rem;
+    height: 6rem;
+    border: 16px solid transparent;
+    border-radius: 50%;
+    border-top: 16px solid #ff79da;
+    border-bottom: 16px solid #99e2d0;
+    animation: spin 1s linear infinite; }

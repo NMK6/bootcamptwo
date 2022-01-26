@@ -1,6 +1,7 @@
 .book {
 	padding: 40px 20px 84px;
 	background-color: $light-grey;
+	width: 100%;
 	@include add-flex;
 	flex-direction: column;
 	justify-content: stretch;
@@ -9,5 +10,13 @@
 	}
 	&__p {
 		margin-bottom: 0.6rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.book {
+		width: 50%;
+		padding: 70px 20px 84px;
+		border-radius: 20px;
+		@include shadow;
 	}
 }
