@@ -1,6 +1,10 @@
 .restaurants {
 	background-color: $light-grey;
 	padding: 20px 20px 40px;
+	&__row {
+		@include add-flex;
+		flex-direction: column;
+	}
 }
 .restaurant {
 	border-radius: 20px;
@@ -52,5 +56,11 @@
 	}
 	&__p {
 		margin: 0.4rem 0 0.9rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.restaurants__row {
+		flex-direction: row;
+		gap: 25px;
 	}
 }

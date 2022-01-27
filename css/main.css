@@ -187,6 +187,12 @@ p.footer__title a {
     align-items: center;
     flex-direction: column;
     width: 100%; }
+  .main__screen-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    width: 100%; }
 
 @media screen and (min-width: 768px) {
   .main {
@@ -194,6 +200,8 @@ p.footer__title a {
     .main__screen-section {
       flex-direction: row;
       padding: 0 1rem;
+      background-color: white; }
+    .main__screen-menu {
       background-color: white; } }
 
 @media screen and (min-width: 900px) {
@@ -245,8 +253,7 @@ p.footer__title a {
   .book {
     width: 50%;
     padding: 70px 20px 84px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px; } }
+    border-radius: 20px; } }
 
 .footer {
   background-color: #353535;
@@ -274,6 +281,11 @@ p.footer__title a {
 .restaurants {
   background-color: #f6f6f6;
   padding: 20px 20px 40px; }
+  .restaurants__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
 
 .restaurant {
   border-radius: 20px;
@@ -324,6 +336,11 @@ p.footer__title a {
   .restaurant__p {
     margin: 0.4rem 0 0.9rem; }
 
+@media screen and (min-width: 768px) {
+  .restaurants__row {
+    flex-direction: row;
+    gap: 25px; } }
+
 .heart__icon-container {
   position: relative; }
 
@@ -355,7 +372,8 @@ p.footer__title a {
   padding: 0 1rem;
   background-color: #f6f6f6;
   position: relative;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  width: 100%; }
   .menu::before {
     width: 100%;
     position: absolute;
@@ -379,6 +397,18 @@ p.footer__title a {
     margin-bottom: 0.9rem; }
   .menu__course {
     padding-bottom: 1.5rem; }
+
+@media screen and (min-width: 768px) {
+  .menu {
+    width: 60%;
+    margin-bottom: 3rem;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px; } }
+
+@media screen and (min-width: 900px) {
+  .menu {
+    width: 50%; } }
 
 .point {
   height: 70px;

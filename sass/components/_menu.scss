@@ -3,6 +3,7 @@
 	background-color: $light-grey;
 	position: relative;
 	padding-bottom: 5rem;
+	width: 100%;
 	&::before {
 		width: 100%;
 		position: absolute;
@@ -28,5 +29,19 @@
 	}
 	&__course {
 		padding-bottom: 1.5rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.menu {
+		width: 60%;
+		margin-bottom: 3rem;
+		border-bottom-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		@include shadow;
+	}
+}
+@media screen and (min-width: 900px) {
+	.menu {
+		width: 50%;
 	}
 }
