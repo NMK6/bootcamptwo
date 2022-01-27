@@ -202,7 +202,7 @@ p.footer__title a {
       padding: 0 1rem;
       background-color: white; }
     .main__screen-menu {
-      background-color: white; } }
+      background-color: #f6f6f6; } }
 
 @media screen and (min-width: 900px) {
   .main {
@@ -401,7 +401,7 @@ p.footer__title a {
 @media screen and (min-width: 768px) {
   .menu {
     width: 60%;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 14px; } }
