@@ -24,8 +24,13 @@
 	&__name {
 		margin: 0;
 	}
+
 	&__info {
 		margin: 0;
+		width: 200px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 	&__price {
 		@include add-flex;
@@ -52,6 +57,9 @@
 	}
 	&__order-container {
 		@include add-flex;
+	}
+	&__button:hover > &__text > &__info {
+		width: 100px;
 	}
 	&__button:hover > &__price {
 		transform: translateX(-5rem);

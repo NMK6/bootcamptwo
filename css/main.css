@@ -426,7 +426,7 @@ p.footer__title a {
   justify-content: start;
   transition: all 1s ease; }
   .point:hover {
-    background-color: #fefefe;
+    background-color: #f5edff;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; }
   .point__number {
     position: absolute;
@@ -485,7 +485,11 @@ p.footer__title a {
   .course__name {
     margin: 0; }
   .course__info {
-    margin: 0; }
+    margin: 0;
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
   .course__price {
     display: flex;
     justify-content: center;
@@ -514,6 +518,8 @@ p.footer__title a {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .course__button:hover > .course__text > .course__info {
+    width: 100px; }
   .course__button:hover > .course__price {
     transform: translateX(-5rem); }
   .course__button:hover > .course__pick {
