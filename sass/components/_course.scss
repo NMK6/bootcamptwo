@@ -59,7 +59,7 @@
 		@include add-flex;
 	}
 	&__button:hover > &__text > &__info {
-		width: 100px;
+		width: 150px;
 	}
 	&__button:hover > &__price {
 		transform: translateX(-5rem);
@@ -69,5 +69,10 @@
 	}
 	&__button:hover > &__pick > &__icon {
 		transform: rotate(360deg);
+	}
+}
+@media screen and (min-width: 1000px) {
+	.course__button:hover > .course__text > .course__info {
+		width: 200px;
 	}
 }

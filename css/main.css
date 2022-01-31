@@ -454,6 +454,8 @@ p.footer__title a {
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-delay: 0; }
+    .point--course:hover {
+      background-color: white; }
   .point--one {
     animation-delay: 0.2s; }
   .point--two {
@@ -519,13 +521,17 @@ p.footer__title a {
     justify-content: center;
     align-items: center; }
   .course__button:hover > .course__text > .course__info {
-    width: 100px; }
+    width: 150px; }
   .course__button:hover > .course__price {
     transform: translateX(-5rem); }
   .course__button:hover > .course__pick {
     opacity: 1; }
   .course__button:hover > .course__pick > .course__icon {
     transform: rotate(360deg); }
+
+@media screen and (min-width: 1000px) {
+  .course__button:hover > .course__text > .course__info {
+    width: 200px; } }
 
 .order-button {
   margin-top: 1rem;

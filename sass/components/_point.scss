@@ -43,6 +43,9 @@
 		animation-timing-function: ease;
 		animation-fill-mode: forwards;
 		animation-delay: 0;
+		&:hover {
+			background-color: white;
+		}
 	}
 
 	&--one {
