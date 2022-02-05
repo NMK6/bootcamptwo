@@ -1,6 +1,6 @@
 @keyframes add-opacity {
 	0% {
-		opaciyty: 0;
+		opacity: 0;
 	}
 	100% {
 		opacity: 1;
@@ -16,7 +16,7 @@
 }
 @keyframes remove-opacity {
 	0% {
-		opaciyty: 1;
+		opacity: 1;
 		z-index: 3;
 	}
 	100% {
@@ -26,7 +26,7 @@
 }
 @keyframes button-appearance {
 	0% {
-		opaciyty: 0;
+		opacity: 0;
 		transform: translateY(20px);
 	}
 	100% {

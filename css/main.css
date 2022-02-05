@@ -14,7 +14,7 @@ a {
 
 @keyframes add-opacity {
   0% {
-    opaciyty: 0; }
+    opacity: 0; }
   100% {
     opacity: 1; } }
 
@@ -26,7 +26,7 @@ a {
 
 @keyframes remove-opacity {
   0% {
-    opaciyty: 1;
+    opacity: 1;
     z-index: 3; }
   100% {
     opacity: 0;
@@ -34,7 +34,7 @@ a {
 
 @keyframes button-appearance {
   0% {
-    opaciyty: 0;
+    opacity: 0;
     transform: translateY(20px); }
   100% {
     opacity: 1;
@@ -453,7 +453,7 @@ p.footer__title a {
     animation-duration: 1s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-    animation-delay: 0; }
+    animation-delay: 0s; }
     .point--course:hover {
       background-color: white; }
   .point--one {
